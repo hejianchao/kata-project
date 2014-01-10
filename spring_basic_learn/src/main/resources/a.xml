@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="HelloAPI" name="HelloAPI2;aaa;bbb" class="com.study.spring.basic.HelloImpl">
+		<constructor-arg index="0" value="hello"></constructor-arg>
+	</bean>
+
+	<bean id="HelloAPIFromFactory" class="com.study.spring.basic.HelloAPIFactory"
+		factory-method="getHelloAPI">
+		<constructor-arg index="0" value="呵呵呵" />
+		<constructor-arg index="1" value="888" />
+	</bean>
+
+	<bean id="ListTest" class="com.study.spring.basic.ListTest">
+		<property name="aList">
+			<list>
+				<value>何健超</value>
+				<value>刘甜甜</value>
+				<value>hjc</value>
+				<value>ltt</value>
+			</list>
+		</property>
+	</bean>
+</beans>
