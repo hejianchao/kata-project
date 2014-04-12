@@ -7,7 +7,6 @@
 	<bean id="HelloAPI" name="HelloAPI2;aaa;bbb" class="com.study.spring.basic.HelloImpl">
 		<constructor-arg index="0" value="hello"></constructor-arg>
 	</bean>
-
 	<bean id="HelloAPIFromFactory" class="com.study.spring.basic.HelloAPIFactory"
 		factory-method="getHelloAPI">
 		<constructor-arg index="0" value="呵呵呵" />

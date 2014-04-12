@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.study.spring.bean_life_cycle.MyBeanPostProcessor1" />
+	<bean class="com.study.spring.bean_life_cycle.MyBeanPostProcessor2" />
+	<bean name="lifeCycleBean" class="com.study.spring.bean_life_cycle.LifeCycleBean"
+		init-method="init" destroy-method="cleanup">
+		<property name="str" value="test str" />
+	</bean>
+</beans>
