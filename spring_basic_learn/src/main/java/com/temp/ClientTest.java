@@ -11,7 +11,7 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
-public class A {
+public class ClientTest {
 	private static AInterestCalculator aInterestCalculator;
 
 	@BeforeClass
@@ -33,7 +33,7 @@ public class A {
 		return Arrays.asList(objs);
 	}
 
-	public A(double expect, double amount, double year) {
+	public ClientTest(double expect, double amount, double year) {
 		this.expect = expect;
 		this.amount = amount;
 		this.year = year;
